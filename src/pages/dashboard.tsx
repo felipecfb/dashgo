@@ -47,11 +47,11 @@ const options = {
     opacity: 0.3,
     type: "gradient",
     gradient: {
-      shade: 'dark',
+      shade: "dark",
       opacityFrom: 0.7,
       opacityTo: 0.3,
-    }
-  }
+    },
+  },
 } as const;
 
 const series = [
