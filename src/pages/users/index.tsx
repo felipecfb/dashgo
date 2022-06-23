@@ -16,7 +16,6 @@ import {
   Spinner,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import { useEffect } from "react";
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
 import { useQuery } from "react-query";
 
@@ -44,6 +43,8 @@ export default function UserList() {
 
     return users;
 
+  }, {
+    staleTime: 1000 * 5,
   });
 
   const isWideVersion = useBreakpointValue({
